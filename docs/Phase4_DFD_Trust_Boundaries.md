@@ -90,7 +90,7 @@ flowchart TB
     P5 -- "9. System & Audit Reports" --> EE_Admin
 
     %% External SSO Flow across TB4
-    P1 <== "SSO Validation Token" ==> EE_SSO
+    P1 <-->|SSO Validation Token| EE_SSO
 
     %% Data Flows to Stores (TB3 Boundary Interactions)
     P1 -->|Read Credentials| DS1

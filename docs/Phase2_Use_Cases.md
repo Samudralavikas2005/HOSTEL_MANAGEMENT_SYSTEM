@@ -64,18 +64,18 @@ graph TD
     Admin --> UC07
 
     %% External System
-    UC00 .-> SSO
+    UC00 -.-> SSO
 
     %% Include Relationships
-    UC01 ..>|<<include>>| UC00
-    UC01 ..>|<<include>>| UC02
-    UC03 ..>|<<include>>| UC00
-    UC04 ..>|<<include>>| UC00
-    UC05 ..>|<<include>>| UC00
-    UC06 ..>|<<include>>| UC00
+    UC01 -.->|include| UC00
+    UC01 -.->|include| UC02
+    UC03 -.->|include| UC00
+    UC04 -.->|include| UC00
+    UC05 -.->|include| UC00
+    UC06 -.->|include| UC00
 
     %% Extend Relationships
-    UC08 ..>|<<extend>>| UC01
+    UC08 -.->|extend| UC01
 ```
 
 ---

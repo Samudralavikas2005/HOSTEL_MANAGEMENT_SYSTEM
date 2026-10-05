@@ -97,9 +97,9 @@ graph TD
     Admin --> UC00
     Admin --> UC05
 
-    UC00 .-> SSO
-    UC01 ..>|<<include>>| UC00
-    UC03 ..>|<<include>>| UC00
+    UC00 -.-> SSO
+    UC01 -.->|include| UC00
+    UC03 -.->|include| UC00
 ```
 * **Detailed Specifications**: Detailed flows for **UC-01 (Apply for Hostel Room & Allocation)** and **UC-04 (Submit & Resolve Complaints)** with main flows, alternative flows, and exception flows.
 
